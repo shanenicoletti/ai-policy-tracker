@@ -1,0 +1,55 @@
+# Runs the AI Policy Tracker automatically every Monday morning,
+# and lets you start it by hand from the "Actions" tab.
+name: Weekly AI Policy Digest
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Mondays at 13:00 UTC (8am Toronto/Boston in winter)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Test run (no email, no memory update)"
+        type: boolean
+        default: true
+      days:
+        description: "How many days to look back"
+        default: "7"
+
+permissions:
+  contents: write   # lets the run save its memory and digest back to the repo
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Run the agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          OWNER_EMAIL: ${{ secrets.OWNER_EMAIL }}
+          SUBSCRIBERS_CSV_URL: ${{ secrets.SUBSCRIBERS_CSV_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            python main.py --dry-run --days "${{ inputs.days }}"
+          else
+            python main.py --days "${{ inputs.days || '7' }}"
+          fi
+
+      - name: Save memory and digest to the repo
+        run: |
+          git config user.name "ai-policy-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for d in data digests logs; do if [ -d "$d" ]; then git add "$d"; fi; done
+          git diff --cached --quiet || git commit -m "Weekly digest $(date +%F)"
+          git push
