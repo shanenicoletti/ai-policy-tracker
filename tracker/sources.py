@@ -204,7 +204,7 @@ def read_webpage(url: str, max_chars: int = 8000) -> dict:
     return {"url": r.url, "text": text[:max_chars], "ai_related_links_on_page": links[:30]}
 
 
-def web_search(client, model: str, query: str, days: int = 7) -> list[dict]:
+def web_search(llm, query: str, days: int = 7) -> list[dict]:
     """Search the web with Google (through Gemini's search grounding).
     Used for things without a clean database: regulators (OSFI, ISED, FTC, CFPB),
     the White House, provincial governments, and news coverage.
@@ -214,10 +214,8 @@ def web_search(client, model: str, query: str, days: int = 7) -> list[dict]:
     prompt = (f"Search for official government or regulator announcements from the past {days} days "
               f"about: {query}. Today is {dt.date.today().isoformat()}. "
               "Briefly list each relevant item with its date and what it is.")
-    resp = client.models.generate_content(
-        model=model, contents=prompt,
-        config=types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())]),
-    )
+    resp = llm.generate(prompt, types.GenerateContentConfig(
+        tools=[types.Tool(google_search=types.GoogleSearch())]))
     results = []
     meta = resp.candidates[0].grounding_metadata if resp.candidates else None
     for chunk in (getattr(meta, "grounding_chunks", None) or []):
@@ -236,11 +234,11 @@ def web_search(client, model: str, query: str, days: int = 7) -> list[dict]:
 EU_DOMAINS = ("europa.eu",)  # covers the Commission, AI Office, Parliament, Council, EUR-Lex, EBA, ESMA, EIOPA, ECB
 
 
-def search_eu_sources(client, model: str, query: str, days: int = 7) -> list[dict]:
+def search_eu_sources(llm, query: str, days: int = 7) -> list[dict]:
     """European Union: searches official EU websites only (anything on europa.eu), such as the
     European Commission and its AI Office, EUR-Lex, the European Parliament, and EU financial
     regulators (EBA, ESMA, EIOPA, ECB). Results from other websites are dropped."""
-    results = web_search(client, model, f"{query} site:europa.eu", days)
+    results = web_search(llm, f"{query} site:europa.eu", days)
     summary, links = results[0], results[1:]
     official = [r for r in links if any(d in (r.get("url") or "") for d in EU_DOMAINS)]
     if not official:

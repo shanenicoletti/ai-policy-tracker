@@ -22,12 +22,11 @@ import datetime as dt
 import json
 import os
 import re
-import time
 
-from google import genai
 from google.genai import types
 
 from . import memory as mem
+from .llm import Gemini, GeminiUnavailable
 from . import sources
 
 MAX_STEPS = 50
@@ -143,23 +142,8 @@ def _collect_urls(obj, found: set) -> None:
             found.add(u.rstrip("/.,"))
 
 
-def _call_gemini(client, model, contents, config):
-    """Call Gemini, waiting and retrying if we hit the free tier's rate limit."""
-    for attempt in range(6):
-        try:
-            return client.models.generate_content(model=model, contents=contents, config=config)
-        except genai.errors.APIError as e:
-            if getattr(e, "code", None) in (429, 500, 503) and attempt < 5:
-                wait = 20 * (attempt + 1)
-                print(f"  Gemini busy ({e.code}), waiting {wait}s...")
-                time.sleep(wait)
-            else:
-                raise
-
-
 def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool = True) -> dict:
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    model = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
+    llm = Gemini()
     end = end_date or dt.date.today()
     start = end - dt.timedelta(days=days)
     memory = mem.load() if use_memory else {}
@@ -169,6 +153,8 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
     sources_checked: set[str] = set()
     log: list[dict] = []
     overview = ""
+    incomplete = False
+    step = 0
 
     def run_tool(name: str, args: dict):
         """Run one tool and return its result (plus guardrail checks)."""
@@ -181,9 +167,9 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
         if name == "list_canada_gazette_issues":
             return sources.list_canada_gazette_issues(days, end_date)
         if name == "web_search":
-            return sources.web_search(client, model, args.get("query", ""), days)
+            return sources.web_search(llm, args.get("query", ""), days)
         if name == "search_eu_sources":
-            return sources.search_eu_sources(client, model, args.get("query", "AI Act"), days)
+            return sources.search_eu_sources(llm, args.get("query", "AI Act"), days)
         if name == "read_webpage":
             return sources.read_webpage(args["url"])
         if name == "save_finding":
@@ -207,7 +193,12 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
     contents = [types.Content(role="user", parts=[types.Part(text="Start this week's AI policy scan.")])]
 
     for step in range(1, MAX_STEPS + 1):
-        resp = _call_gemini(client, model, contents, config)
+        try:
+            resp = llm.generate(contents, config)
+        except GeminiUnavailable as e:
+            print(f"Stopping early: {e}")
+            incomplete = True
+            break
         calls = resp.function_calls or []
         contents.append(resp.candidates[0].content)
 
@@ -252,4 +243,5 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
 
     return {"memory": memory,"start": start.isoformat(), "end": end.isoformat(), "overview": overview,
             "findings": findings, "sources_checked": sorted(sources_checked),
-            "steps_used": step, "log": log}
+            "steps_used": step, "log": log,
+            "incomplete": incomplete or not overview, "models_used": llm.models[:llm.current + 1]}

@@ -24,7 +24,12 @@ def main():
     args = p.parse_args()
 
     result = run_agent(days=args.days)
-    print(f"\nDone in {result['steps_used']} steps. {len(result['findings'])} findings.")
+    print(f"\nDone in {result['steps_used']} steps. {len(result['findings'])} findings. "
+          f"Models used: {', '.join(result['models_used'])}")
+    if result["incomplete"]:
+        note = ("Note: this week's scan stopped early because the AI service was unavailable, "
+                "so some developments may be missing.")
+        result["overview"] = f"{result['overview']} {note}".strip()
 
     # Save the digest and the agent's step-by-step log (useful for checking its work)
     (ROOT / "digests").mkdir(exist_ok=True)
@@ -37,6 +42,9 @@ def main():
     if args.dry_run:
         print("\nDry run: no email sent, memory not updated.")
         return
+
+    if result["incomplete"] and not result["findings"]:
+        raise SystemExit("Scan failed before finding anything, so no email was sent. Try running it again later.")
 
     recipients = digest.load_subscribers()
     if recipients:
