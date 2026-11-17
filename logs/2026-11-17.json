@@ -1,0 +1,56 @@
+{
+  "start": "2026-11-10",
+  "end": "2026-11-17",
+  "overview": "Note: this week's scan stopped early because the AI service was unavailable, so some developments may be missing.",
+  "findings": [],
+  "sources_checked": [
+    "list_canada_gazette_issues",
+    "search_canadian_bills",
+    "search_congress_bills",
+    "search_eu_sources",
+    "search_federal_register"
+  ],
+  "steps_used": 2,
+  "log": [
+    {
+      "step": 1,
+      "tool": "search_federal_register",
+      "args": {
+        "query": "artificial intelligence"
+      },
+      "result_preview": "[{'title': 'Request for Information', 'url': 'https://www.federalregister.gov/documents/2026/11/13/2026-23155/request-for-information', 'date': '2026-11-13', 'type': 'Notice', 'agency': 'Education Department', 'summary': \"The National Center for Education Evaluation (NCEE), a center within the U.S. Department of Education's Institute of Education Sciences (IES), is charged (20 U.S.C. 9561(b)(2)) with evaluating how effectively States and local agencies implement the Individuals with Disabilities"
+    },
+    {
+      "step": 1,
+      "tool": "search_congress_bills",
+      "args": {},
+      "result_preview": "[{'title': 'HR 10873: AI Cyber Defense Act', 'url': 'https://www.congress.gov/bill/119th-congress/house-bill/10873', 'date': '2026-10-22', 'latest_action': 'Referred to the House Committee on Science, Space, and Technology.'}, {'title': 'HRES 1642: Expressing the sense of the House of Representatives that Congress must refuse to provide any additional funds or exceptional regulatory support to companies or financial institutions facing insolvency or financial collapse due to exposures to acute s"
+    },
+    {
+      "step": 1,
+      "tool": "search_canadian_bills",
+      "args": {},
+      "result_preview": "[]"
+    },
+    {
+      "step": 1,
+      "tool": "list_canada_gazette_issues",
+      "args": {},
+      "result_preview": "[{'part': 'Part I', 'title': 'Canada Gazette - Part I, November 14, 2026, volume 160, number 46', 'url': 'https://gazette.gc.ca/rp-pr/p1/2026/2026-11-14/html/index-eng.html', 'date': '2026-11-14'}, {'part': 'Part I', 'title': 'Canada Gazette - 3rd Quarterly Index', 'url': 'https://gazette.gc.ca/rp-pr/p1/2026/indexq3-eng.html', 'date': '2026-11-13'}]"
+    },
+    {
+      "step": 1,
+      "tool": "search_eu_sources",
+      "args": {
+        "query": "AI Act"
+      },
+      "result_preview": "{'error': 'GeminiUnavailable: All Gemini models are busy or unavailable right now.'}"
+    }
+  ],
+  "incomplete": true,
+  "models_used": [
+    "gemini-3.8-flash",
+    "gemini-3.7-flash",
+    "gemini-3.5-flash-lite"
+  ]
+}
