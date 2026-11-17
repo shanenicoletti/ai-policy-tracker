@@ -14,7 +14,7 @@ from google import genai
 DEFAULT_MODEL = "gemini-3.8-flash"
 DEFAULT_BACKUPS = "gemini-3.7-flash,gemini-3.5-flash-lite"
 
-RETRYABLE = {429, 500, 503, 504}   # busy or rate-limited: worth waiting
+RETRYABLE = {429, 500, 502, 503, 504}   # busy or rate-limited: worth waiting
 SKIP_MODEL = {404}                 # model not available: go straight to the next one
 
 
@@ -45,15 +45,17 @@ class Gemini:
                     if code in SKIP_MODEL:
                         print(f"  {self.model} is not available ({code}).")
                         break
-                    if code in RETRYABLE and attempt < 2:
-                        wait = 30 * (attempt + 1)
-                        print(f"  {self.model} busy ({code}), waiting {wait}s...")
-                        time.sleep(wait)
-                        continue
-                    if code in RETRYABLE:
-                        print(f"  {self.model} still busy ({code}).")
-                        break
-                    raise  # a real error (bad request, bad key): don't hide it
+                    if code not in RETRYABLE:
+                        raise  # a real error (bad request, bad key): don't hide it
+                    problem = f"busy ({code})"
+                except Exception as e:  # dropped connection, timeout, etc.
+                    problem = f"connection problem ({type(e).__name__})"
+                if attempt < 2:
+                    wait = 30 * (attempt + 1)
+                    print(f"  {self.model} {problem}, waiting {wait}s...")
+                    time.sleep(wait)
+                else:
+                    print(f"  {self.model} still has a {problem}.")
             self.current += 1
             if self.current < len(self.models):
                 print(f"  Switching to backup model {self.model}.")

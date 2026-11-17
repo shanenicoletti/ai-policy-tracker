@@ -26,7 +26,7 @@ import re
 from google.genai import types
 
 from . import memory as mem
-from .llm import Gemini, GeminiUnavailable
+from .llm import Gemini
 from . import sources
 
 MAX_STEPS = 50
@@ -195,8 +195,8 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
     for step in range(1, MAX_STEPS + 1):
         try:
             resp = llm.generate(contents, config)
-        except GeminiUnavailable as e:
-            print(f"Stopping early: {e}")
+        except Exception as e:  # never lose the whole run because the AI service broke
+            print(f"Stopping early: {type(e).__name__}: {str(e)[:300]}")
             incomplete = True
             break
         calls = resp.function_calls or []
