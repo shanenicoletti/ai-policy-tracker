@@ -10,6 +10,7 @@ a simple script.
 """
 
 import datetime as dt
+import io
 import os
 import re
 import xml.etree.ElementTree as ET
@@ -188,10 +189,27 @@ def list_canada_gazette_issues(days: int = 7, end_date: dt.date | None = None) -
 # General tools
 # ---------------------------------------------------------------------------
 
+def _read_pdf(r, max_chars: int) -> dict:
+    """Pull the text out of a PDF (many official rules and notices are PDFs)."""
+    from pypdf import PdfReader
+    reader = PdfReader(io.BytesIO(r.content))
+    text = ""
+    for page in reader.pages[:15]:  # first 15 pages is plenty to understand a document
+        text += (page.extract_text() or "") + "\n"
+        if len(text) > max_chars:
+            break
+    text = re.sub(r"[ \t]+", " ", text).strip()
+    if not text:
+        text = "(This PDF has no readable text, it may be a scanned image.)"
+    return {"url": r.url, "type": "pdf", "pages": len(reader.pages), "text": text[:max_chars]}
+
+
 def read_webpage(url: str, max_chars: int = 8000) -> dict:
     """Download a web page and return its readable text (cut to max_chars)."""
     r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
+    if "pdf" in r.headers.get("Content-Type", "").lower() or r.content[:5] == b"%PDF-":
+        return _read_pdf(r, max_chars)
     soup = BeautifulSoup(r.text, "html.parser")
     for tag in soup(["script", "style", "nav", "footer", "header"]):
         tag.decompose()

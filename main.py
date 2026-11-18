@@ -23,7 +23,7 @@ def main():
     p.add_argument("--dry-run", action="store_true")
     args = p.parse_args()
 
-    result = run_agent(days=args.days)
+    result = digest.tidy(run_agent(days=args.days))
     print(f"\nDone in {result['steps_used']} steps. {len(result['findings'])} findings. "
           f"Models used: {', '.join(result['models_used'])}")
     if result["incomplete"]:

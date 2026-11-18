@@ -24,6 +24,19 @@ def week_label(end: str) -> str:
     return dt.date.fromisoformat(end).strftime("%B %-d, %Y")
 
 
+def _clean(text: str) -> str:
+    """Safety net for the house style: no em dashes."""
+    return (text or "").replace(" \u2014 ", ", ").replace("\u2014", ", ")
+
+
+def tidy(result: dict) -> dict:
+    result["overview"] = _clean(result.get("overview"))
+    for f in result["findings"]:
+        for k in ("title", "what_happened", "why_it_matters"):
+            f[k] = _clean(f.get(k))
+    return result
+
+
 def to_markdown(result: dict) -> str:
     """Plain version, saved in the repo as a weekly archive."""
     lines = [f"# AI Policy Tracker: week ending {week_label(result['end'])}", "",
