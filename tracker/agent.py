@@ -244,4 +244,5 @@ def run_agent(days: int = 7, end_date: dt.date | None = None, use_memory: bool =
     return {"memory": memory,"start": start.isoformat(), "end": end.isoformat(), "overview": overview,
             "findings": findings, "sources_checked": sorted(sources_checked),
             "steps_used": step, "log": log,
-            "incomplete": incomplete or not overview, "models_used": llm.models[:llm.current + 1]}
+            "incomplete": incomplete or not overview, "models_used": llm.models[:llm.current + 1],
+            "ai_errors": llm.errors}

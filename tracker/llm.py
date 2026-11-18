@@ -29,6 +29,7 @@ class Gemini:
         backups = os.environ.get("GEMINI_BACKUP_MODELS") or DEFAULT_BACKUPS
         self.models = [main] + [m.strip() for m in backups.split(",") if m.strip() and m.strip() != main]
         self.current = 0
+        self.errors = []  # every problem we hit, saved in the run log
 
     @property
     def model(self) -> str:
@@ -42,6 +43,7 @@ class Gemini:
                         model=self.model, contents=contents, config=config)
                 except genai.errors.APIError as e:
                     code = getattr(e, "code", None)
+                    self.errors.append({"model": self.model, "code": code, "message": str(e)[:300]})
                     if code in SKIP_MODEL:
                         print(f"  {self.model} is not available ({code}).")
                         break
@@ -49,6 +51,7 @@ class Gemini:
                         raise  # a real error (bad request, bad key): don't hide it
                     problem = f"busy ({code})"
                 except Exception as e:  # dropped connection, timeout, etc.
+                    self.errors.append({"model": self.model, "code": None, "message": f"{type(e).__name__}: {str(e)[:250]}"})
                     problem = f"connection problem ({type(e).__name__})"
                 if attempt < 2:
                     wait = 30 * (attempt + 1)
