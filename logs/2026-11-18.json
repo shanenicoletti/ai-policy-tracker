@@ -1,117 +1,47 @@
 {
   "start": "2026-11-11",
   "end": "2026-11-18",
-  "overview": "AI policy during the week of November 11\u201318, 2026 was highlighted by major regulatory and trade actions across jurisdictions. In the European Union, the European Commission advanced implementation of the EU AI Act by publishing formal guidelines on Article 50 transparency obligations and launching a public consultation on the Article 27 Fundamental Rights Impact Assessment template, while financial regulators on both sides of the Atlantic\u2014including the Federal Reserve, OCC, ECB, and Joint EU-UK Forum\u2014elevated scrutiny on systemic AI infrastructure debt, operational resilience, and cybersecurity risks. In the United States, the Department of Commerce issued an interim final rule restricting foreign remote access to advanced AI computing chips, New York City enacted a landmark ban on algorithmic surveillance pricing, and in Canada, Saskatchewan introduced provincial legislation to provide civil remedies against deceptive AI deepfakes.",
+  "overview": "The European Commission launched public feedback and testing on its draft Fundamental Rights Impact Assessment template under Article 27 of the AI Act, creating key compliance guidance for high-risk deployers including financial institutions. The European Central Bank warned that AI infrastructure debt financing and advanced cyber threats represent top systemic risks to financial stability. In the United States, Quad leaders committed to the Super Intelligence Accelerator to fund and coordinate trusted AI deployment across the Indo-Pacific.",
   "findings": [
     {
-      "title": "European Commission Guidelines on AI Act Article 50 Transparency Obligations",
-      "jurisdiction": "European Union",
-      "importance": "medium",
-      "date": "2026-11-12",
-      "what_happened": "The European Commission formally published interpretive guidelines under Article 96(1)(d) of Regulation (EU) 2024/1689 (the AI Act) regarding compliance with the Article 50 transparency obligations for AI systems. The guidance clarifies requirements for AI interaction notices (such as customer chatbots), synthetic media marking, emotion recognition/biometric categorisation disclosures, and deepfake labelling.",
-      "why_it_matters": "This provides binding national market surveillance authorities and private deployers\u2014including financial institutions using customer-facing chatbots or synthetic content\u2014with explicit compliance benchmarks ahead of statutory enforcement deadlines.",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C_202606005",
-      "financial_services": true
-    },
-    {
-      "what_happened": "The European Commission and AI Office launched a public consultation and pilot testing call on a draft template and explanatory notice for deployers of high-risk AI systems to conduct Fundamental Rights Impact Assessments (FRIAs) under Article 27 of the AI Act. The consultation runs until January 15, 2027, with an open call for high-risk deployers to test the draft framework ending December 4, 2026.",
       "date": "2026-11-16",
+      "what_happened": "The European Commission and the AI Office launched a public consultation and pilot testing program for a draft questionnaire template and explanatory notice under Article 27 of the AI Act. The template guides deployers of high-risk AI systems in evaluating impacts on fundamental rights before deployment.",
+      "title": "European Commission Consults on AI Act Fundamental Rights Impact Assessment Template",
+      "why_it_matters": "The guidance directly affects public bodies and private deployers of high-risk AI, including financial institutions deploying AI for credit scoring and life or health insurance risk assessments. Covered deployers must complete and submit these assessments to market surveillance authorities prior to deployment ahead of the December 2027 enforcement deadline.",
       "importance": "medium",
-      "jurisdiction": "European Union",
-      "why_it_matters": "Deployers of high-risk AI, including financial institutions utilizing AI in credit scoring and life/health insurance risk assessment, will be required to complete and submit this assessment to market surveillance authorities prior to deploying high-risk AI systems.",
-      "title": "European Commission Consults on Draft Fundamental Rights Impact Assessment Template under AI Act",
       "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
-      "financial_services": true
-    },
-    {
-      "why_it_matters": "Signals coordinated cross-border supervisory scrutiny of AI adoption by banks and financial market participants across the EU and UK, focusing on operational resilience and third-party tech dependencies.",
-      "url": "https://finance.ec.europa.eu/publications/sixth-meeting-joint-eu-uk-financial-regulatory-forum-november-2026_en",
       "financial_services": true,
-      "jurisdiction": "European Union",
-      "title": "Joint EU-UK Financial Regulatory Forum Addresses Emerging AI and Operational Risks",
-      "importance": "medium",
-      "what_happened": "Senior officials from DG FISMA, the ECB, EBA, ESMA, EIOPA, HM Treasury, the Bank of England, and the FCA convened for the Sixth Joint EU-UK Financial Regulatory Forum, issuing a joint statement addressing financial stability and digital finance. Regulators specifically highlighted evolving operational, cyber, and stability risks stemming from artificial intelligence and agreed to deepen bilateral supervisory coordination.",
-      "date": "2026-11-12"
+      "jurisdiction": "European Union"
     },
     {
-      "why_it_matters": "Establishes operational and technical expectations for pharmaceutical companies and regulators regarding data integrity, model explainability, and risk mitigation when deploying AI in clinical pipelines.",
-      "importance": "medium",
-      "url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence/artificial-intelligence-guidance",
-      "date": "2026-11-11",
-      "jurisdiction": "European Union",
-      "what_happened": "The European Medicines Agency (EMA) published updated regulatory guidance and governance principles governing the use and integration of artificial intelligence within the European medicines regulatory network. Formulated under the Network Data Steering Group's 2025\u20132028 workplan, the release sets out guidelines for AI application across drug development, clinical trials, and regulatory evaluations.",
-      "financial_services": false,
-      "title": "European Medicines Agency Releases Guidance and Governance Framework for AI in Medicines"
-    },
-    {
-      "financial_services": false,
-      "what_happened": "The European Commission's AI Office launched an open call for expression of interest inviting European AI providers with mature solutions to present them to the network of European Digital Innovation Hubs (EDIHs).",
-      "date": "2026-11-17",
-      "title": "EU AI Office Launches Call for Expression of Interest for European AI Providers",
-      "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers",
-      "jurisdiction": "European Union",
-      "why_it_matters": "Provides European AI developers with commercial pathways and matchmaking opportunities to scale adoption among small and medium-sized enterprises across the European Union.",
-      "importance": "low"
-    },
-    {
-      "what_happened": "The Department of Commerce's Bureau of Industry and Security (BIS) issued an interim final rule (RIN 0694-AK50) titled 'Addressing Remote Access to Advanced Semiconductors.' The regulation establishes export license requirements to prevent entities headquartered in arms-embargoed jurisdictions (Country Group D:5, including China) or Macau from remotely accessing advanced AI computing power through global third-party data centers.",
-      "why_it_matters": "Directly impacts global cloud infrastructure providers, semiconductor exporters, and data centers by closing pathways for foreign restricted entities to train or fine-tune frontier AI models using overseas advanced compute.",
-      "financial_services": false,
-      "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
+      "why_it_matters": "Euro area banks and financial intermediaries face heightened supervisory expectations from ECB Banking Supervision to adapt risk management frameworks, strengthen cyber defences, and manage critical dependencies on a concentrated set of cloud and AI service providers.",
       "date": "2026-11-16",
-      "importance": "high",
-      "jurisdiction": "United States",
-      "title": "US Commerce Department Issues Rule Restricting Remote Access to Advanced AI Semiconductors"
-    },
-    {
-      "importance": "medium",
-      "what_happened": "Federal Reserve Governor Michael S. Barr delivered a keynote address evaluating findings from the Fed's November 2026 Financial Stability Report regarding potential financial stability risks from artificial intelligence. The analysis highlighted the rapid expansion of on-balance-sheet debt among top AI hyperscalers (expected to exceed $800 billion), over $3 trillion in opaque off-balance-sheet computing liabilities and leases, algorithmic collusion risks in wholesale trading, and systemic cybersecurity vulnerabilities.",
-      "why_it_matters": "Signals to supervised commercial banks, investment managers, and creditors that the Federal Reserve is closely scrutinizing counterparty risk, valuation premiums, and debt exposures associated with the global AI data center buildout.",
-      "jurisdiction": "United States",
       "financial_services": true,
-      "title": "Federal Reserve Warns of AI Buildout Debt and Systemic Financial Stability Risks",
-      "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
-      "date": "2026-11-16"
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.ga.html",
+      "what_happened": "In an address previewing the Financial Stability Review, ECB Vice-President Boris Vujcic identified AI as a top systemic risk to the euro area financial system, citing massive corporate debt issuance across the AI supply chain, market concentration, and rapid advances in AI cyber capabilities. The ECB also published an early-release special feature analyzing the cyber-AI nexus.",
+      "jurisdiction": "European Union",
+      "title": "ECB Highlights AI Debt Financing and Cyber Threats as Key Financial Stability Risks",
+      "importance": "medium"
     },
     {
-      "what_happened": "The Office of the Comptroller of the Currency (OCC) published its Fall 2026 Semiannual Risk Perspective, highlighting emerging risks in the federal banking system. The report evaluated how banks of all sizes are increasingly adopting artificial intelligence and 'Super Intelligence' for operational efficiency and analytics, while warning of amplified cybersecurity, fraud, and credit risks as threat actors exploit advanced AI models.",
-      "date": "2026-11-12",
-      "title": "OCC Highlights Artificial Intelligence Opportunities and Operational Risks in Fall 2026 Report",
-      "importance": "medium",
-      "jurisdiction": "United States",
-      "url": "https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-99.html",
-      "why_it_matters": "Alerts federally regulated national banks and federal savings associations that bank examiners are prioritizing internal controls, fraud prevention, and operational resilience surrounding AI deployments.",
-      "financial_services": true
-    },
-    {
-      "what_happened": "The New York City Council passed Introduction 891-A, landmark legislation sponsored by Speaker Julie Menin that bans 'surveillance pricing' across the city. The bill makes it unlawful for any entity or service provider to use algorithms and consumer personal data to charge different prices to different customers for the same goods or services.",
-      "date": "2026-11-12",
-      "importance": "high",
-      "title": "New York City Council Approves Landmark Ban on Algorithmic Surveillance Pricing",
-      "jurisdiction": "United States",
-      "why_it_matters": "Creates strict consumer protection compliance obligations for retailers, e-commerce platforms, delivery apps, and ride-sharing services operating in NYC by eliminating personalized algorithmic price differentiation and establishing a significant municipal model for automated pricing governance.",
-      "financial_services": true,
-      "url": "https://council.nyc.gov/press/2026/11/12/3339"
+      "importance": "low",
+      "title": "EU AI Office Launches Call for SME-Ready AI Solutions",
+      "what_happened": "The European Commission's AI Office opened a call for expression of interest for up to 100 European AI providers with mature, deployment-ready solutions to join a dedicated catalogue on the AI-on-Demand Platform.",
+      "why_it_matters": "The initiative enables the European Digital Innovation Hubs network to connect European small and medium-sized enterprises with vetted European AI tools to accelerate adoption under the EU Apply AI Strategy.",
+      "jurisdiction": "European Union",
+      "date": "2026-11-17",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers",
+      "financial_services": false
     },
     {
       "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release",
-      "title": "Quad Leaders Affirm Support for Super Intelligence Accelerator to Expand Trusted AI",
-      "importance": "medium",
-      "why_it_matters": "Directs diplomatic and financial resources toward sovereign computing capacity and trusted AI deployment among allied nations, strengthening technological interoperability and critical infrastructure across the Indo-Pacific.",
       "financial_services": false,
+      "title": "Quad Leaders Establish Super Intelligence Accelerator for Regional AI Deployment",
+      "why_it_matters": "The multilateral commitment aligns regional allies around AI funding, shared technical capacity, and supply chain security while advancing the U.S. administration's executive designation of Super Intelligence as its standard terminology.",
       "jurisdiction": "United States",
+      "what_happened": "At the Quad Leaders' Summit in Manila, the leaders of the United States, Australia, India, and Japan affirmed the launch of the Super Intelligence Accelerator to fund and coordinate access, deployment, and technical assistance for trusted AI across the Indo-Pacific. A clarifying footnote noted that Australia, India, and Japan interpret \"Super Intelligence\" as artificial intelligence.",
       "date": "2026-11-17",
-      "what_happened": "Following the Quad Leaders' Summit in Manila, President Donald J. Trump and the Prime Ministers of Australia, India, and Japan issued a joint declaration affirming their commitment to the Quad Super Intelligence (SI) Accelerator. The initiative coordinates and funds multilateral programs to facilitate trusted AI/SI access, regional deployment, and technical assistance across the Indo-Pacific."
-    },
-    {
-      "importance": "medium",
-      "date": "2026-11-17",
-      "what_happened": "Saskatchewan Minister of Justice and Attorney General Tim McLeod introduced Bill No. 76, The Prevention of Deceptive Artificial Intelligence Act, in the provincial Legislative Assembly. The bill establishes civil remedies against malicious AI-generated deepfakes, grants courts the authority to mandate content takedowns and award damages, and updates provincial election and consumer protection rules to mandate AI disclosures.",
-      "title": "Saskatchewan Introduces The Prevention of Deceptive Artificial Intelligence Act (Bill 76)",
-      "jurisdiction": "Canada",
-      "financial_services": false,
-      "why_it_matters": "Establishes Canada's first comprehensive provincial legislative framework specifically targeting deceptive synthetic media, imposing civil liabilities on creators and distributors of malicious AI content and setting new transparency requirements.",
-      "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Orders/30L3S/20261117Orders-HTML.htm?v=20261117023902"
+      "importance": "medium"
     }
   ],
   "sources_checked": [
@@ -122,7 +52,7 @@
     "search_federal_register",
     "web_search"
   ],
-  "steps_used": 31,
+  "steps_used": 24,
   "log": [
     {
       "step": 1,
@@ -144,7 +74,7 @@
       "step": 1,
       "tool": "search_congress_bills",
       "args": {},
-      "result_preview": "[{'title': 'HR 9125: Sectoral AI Governance Act of 2026', 'url': 'https://www.congress.gov/bill/119th-congress/house-bill/9125', 'date': '2026-06-03', 'latest_action': 'Referred to the Committee on the Judiciary, and in addition to the Committee on Oversight and Government Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned.'}, {'title': 'HR 10981: American AI Security Act'"
+      "result_preview": "[{'title': 'HRES 1642: Expressing the sense of the House of Representatives that Congress must refuse to provide any additional funds or exceptional regulatory support to companies or financial institutions facing insolvency or financial collapse due to exposures to acute stress within the artificial intelligence market and must provide support to all harmed Americans instead.', 'url': 'https://www.congress.gov/bill/119th-congress/house-resolution/1642', 'date': '2026-10-29', 'latest_action': 'R"
     },
     {
       "step": 1,
@@ -168,27 +98,11 @@
     },
     {
       "step": 2,
-      "tool": "search_eu_sources",
+      "tool": "search_federal_register",
       "args": {
-        "query": "AI Act"
+        "query": "algorithm"
       },
-      "result_preview": "[{'search_summary': \"Official government and regulator announcements regarding or directly implicating the **AI Act** published on `europa.eu` during the 7-day window (11\u201318 November 2026) include:\\n\\n* **16 November 2026 \u2013 Consultation on Draft Template for Fundamental Rights Impact Assessments (FRIA)**\\n  * **Source:** European Commission (*Shaping Europe\u2019s digital future*)\\n  * **Summary:** The Commission opened a public feedback period on a draft questionnaire template designed to help deplo"
-    },
-    {
-      "step": 2,
-      "tool": "search_eu_sources",
-      "args": {
-        "query": "artificial intelligence guidelines"
-      },
-      "result_preview": "[{'search_summary': 'The following official announcements and guidance publications on artificial intelligence were issued across European Union portals (`europa.eu`) between November 11 and November 18, 2026:\\n\\n---\\n\\n### 1. **European Commission: Guidelines on Article 50 Transparency Obligations under the AI Act**\\n* **Date:** November 12, 2026\\n* **What it is:** The European Commission published official guidelines pursuant to Article 96(1)(d) of Regulation (EU) 2024/1689 (the AI Act). The c"
-    },
-    {
-      "step": 2,
-      "tool": "search_eu_sources",
-      "args": {
-        "query": "AI Office"
-      },
-      "result_preview": "[{'search_summary': 'Official European Commission / EU regulator announcements concerning the **AI Office** and related **AI Act / Apply AI** initiatives published in the past 7 days (November 11\u201318, 2026) on `europa.eu` include:\\n\\n* **17 November 2026 \u2013 Call for Expression of Interest for European AI Providers**  \\n  The European Commission\u2019s AI Office launched a call for expression of interest inviting European AI providers with mature solutions to present them to the network of European Digi"
+      "result_preview": "[{'title': \"Self-Regulatory Organizations; MEMX LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the Exchange's Fee Schedule\", 'url': 'https://www.federalregister.gov/documents/2026/11/13/2026-23181/self-regulatory-organizations-memx-llc-notice-of-filing-and-immediate-effectiveness-of-a-proposed', 'date': '2026-11-13', 'type': 'Notice', 'agency': 'Securities and Exchange Commission', 'summary': ''}]"
     },
     {
       "step": 2,
@@ -199,151 +113,127 @@
       "result_preview": "{'url': 'https://gazette.gc.ca/rp-pr/p1/2026/2026-11-14/html/index-eng.html', 'text': 'Canada Gazette, Part 1, Volume 160, Number 46:\\xa0Index\\nSkip to main content\\nSkip to \"About this site\"\\nCanada Gazette, Part I, Volume 160, Number 46:\\xa0Index\\nNovember\\xa014,\\xa02026\\nCommissions\\nCanada Energy Regulator\\nApplication to export electricity to the United States\\nEDF Trading North America, LLC\\nCanadian International Trade Tribunal\\nExpiry review\\xa0RR-2026-008\\xa0\u2014\\xa0Notice of expiry review"
     },
     {
+      "step": 2,
+      "tool": "search_eu_sources",
+      "args": {
+        "query": "AI Act"
+      },
+      "result_preview": "[{'search_summary': 'Official European Union announcements and regulatory updates directly relating to the **AI Act** and European Commission AI initiatives from the past 7 days (11\u201318 November 2026):\\n\\n* **17 November 2026 \u2013 Call for Expression of Interest for European AI Providers**  \\n  *Source: European Commission / AI Office*  \\n  The European Commission\u2019s AI Office launched an open call for European AI providers offering mature AI solutions. Selected solutions will be catalogued on the AI"
+    },
+    {
+      "step": 3,
+      "tool": "search_eu_sources",
+      "args": {
+        "query": "artificial intelligence guidelines"
+      },
+      "result_preview": "[{'search_summary': \"Relevant official European Union government and regulatory announcements regarding artificial intelligence guidelines, framework tools, and regulatory guidance from the past 7 days (November 11\u201318, 2026) include:\\n\\n* **November 16, 2026 \u2014 Draft Guidance Template for Fundamental Rights Impact Assessments (Article 27 AI Act)**  \\n  * **What it is:** The European Commission launched a call for feedback and testing on a draft questionnaire template designed to assist and guide "
+    },
+    {
+      "step": 3,
+      "tool": "search_eu_sources",
+      "args": {
+        "query": "AI Office"
+      },
+      "result_preview": "[{'search_summary': \"The following official announcements involving the **European AI Office** were published on **europa.eu** between November 11, 2026, and November 18, 2026:\\n\\n* **17 November 2026 \u2013 Call for Expression of Interest for European AI Providers**  \\n  The AI Office launched a call for expression of interest open to European AI providers to submit mature, deployment-ready AI solutions to the network of European Digital Innovation Hubs (EDIHs). Selected solutions will be cataloged "
+    },
+    {
       "step": 3,
       "tool": "search_eu_sources",
       "args": {
         "query": "artificial intelligence financial"
       },
-      "result_preview": "[{'search_summary': 'Official EU government and regulatory announcements and publications from the past 7 days (November 11\u201318, 2026) regarding artificial intelligence in the financial sector include:\\n\\n* **16 November 2026 \u2013 European Central Bank (ECB): Keynote Address on Financial System Risks & AI**  \\n  * **What it is:** In an opening speech at the Frankfurt Euro Finance Week ahead of the release of the *Financial Stability Review* (FSR), the ECB highlighted artificial intelligence as a pri"
+      "result_preview": "[{'search_summary': 'Official European Union and regulator announcements from the past 7 days (11\u201318 November 2026) concerning artificial intelligence and the financial sector include:\\n\\n* **16 November 2026 \u2013 European Central Bank (ECB): Keynote Speech at Frankfurt Euro Finance Week**  \\n  * **What it is:** An opening address by the ECB previewing the forthcoming *Financial Stability Review* (FSR). The speech highlighted artificial intelligence as a leading systemic risk to the euro area finan"
     },
     {
       "step": 3,
-      "tool": "search_eu_sources",
+      "tool": "web_search",
       "args": {
-        "query": "EBA artificial intelligence"
+        "query": "\"artificial intelligence\" OR \"AI\" site:whitehouse.gov"
       },
-      "result_preview": "[{'search_summary': 'A search of official announcements on **europa.eu** across the past 7 days (November 11\u201318, 2026) shows **no standalone or direct official announcements/press releases issued by the European Banking Authority (EBA) specifically dedicated to artificial intelligence**.\\n\\nHowever, the following official EU regulatory publications within this window reference the EBA alongside AI risk and supervision:\\n\\n* **16\u201317 November 2026 \u2013 European Central Bank (ECB) | Financial Stabilit"
+      "result_preview": "[{'search_summary': 'During the 7-day period from **November 11 to November 18, 2026**, the relevant official White House announcement addressing artificial intelligence is:\\n\\n* **November 17, 2026 \u2013 Quad Leaders\\' Summit Joint Press Release**\\n  * **What it is:** A joint statement released following the Quad Leaders\\' Summit in Manila featuring President Donald J. Trump, Prime Minister Anthony Albanese of Australia, Prime Minister Narendra Modi of India, and Prime Minister Takaichi Sanae of Ja"
     },
     {
       "step": 3,
-      "tool": "search_eu_sources",
+      "tool": "web_search",
       "args": {
-        "query": "ESMA artificial intelligence"
+        "query": "\"artificial intelligence\" OR \"AI\" site:osfi-bsif.gc.ca"
       },
-      "result_preview": "[{'search_summary': 'Between **11 November 2026 and 18 November 2026**, there were **no standalone, dedicated regulatory announcements** on artificial intelligence issued solely by the European Securities and Markets Authority (ESMA). \\n\\nHowever, one official joint regulatory announcement involving ESMA addressed AI within this 7-day window:\\n\\n---\\n\\n### Official Announcement in the Past 7 Days\\n\\n* **Date:** 12 November 2026  \\n* **Source:** European Commission / Joint Forum (`finance.ec.euro"
-    },
-    {
-      "step": 3,
-      "tool": "search_eu_sources",
-      "args": {
-        "query": "EIOPA artificial intelligence"
-      },
-      "result_preview": "[{'search_summary': 'Official government and regulatory publications on **europa.eu** involving **EIOPA** and **artificial intelligence** during the past 7 days (November 11\u201318, 2026) include the following:\\n\\n* **12 November 2026 \u2013 European Commission (DG FISMA) Announcement: *Sixth meeting of the Joint EU-UK Financial Regulatory Forum***\\n  * **What it is:** A formal joint regulatory readout of the bilateral forum held in Brussels. EIOPA participated alongside the European Commission, the ECB,"
+      "result_preview": "[{'search_summary': 'There have been **no** official government or regulator announcements regarding artificial intelligence or AI published on the Office of the Superintendent of Financial Institutions (OSFI) website (`osfi-bsif.gc.ca`) in the past 7 days (November 11\u201318, 2026).\\n\\n---\\n\\n### Most Recent Preceding OSFI AI Announcements / Releases:\\n\\nFor reference, the most recent AI-related publications and statements from OSFI occurred earlier in autumn 2026:\\n\\n* **November 2, 2026 \u2013 Remarks"
     },
     {
       "step": 4,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:whitehouse.gov november 2026"
+        "query": "\"artificial intelligence\" site:ised-isde.canada.ca"
       },
-      "result_preview": "[{'search_summary': \"From official announcements published on **whitehouse.gov** during the past 7 days (November 11\u201318, 2026), the relevant item addressing artificial intelligence is:\\n\\n* **Item:** **Quad Leaders\u2019 Summit Joint Press Release**\\n  * **Date:** November 17, 2026\\n  * **What it is:** A joint statement issued following the Quad Leaders' Summit in Manila with President Donald J. Trump, Prime Minister Anthony Albanese of Australia, Prime Minister Narendra Modi of India, and Prime Mini"
+      "result_preview": "[{'search_summary': 'Based on Innovation, Science and Economic Development Canada (`ised-isde.canada.ca`), **no official government or regulatory news releases or policy announcements specifically regarding artificial intelligence were issued in the past 7 days** (November 11\u201318, 2026). \\n\\nThe official releases published during this 7-day window focused on Budget 2026 community/infrastructure investments, a statement on telecommunications, and consumer debt assistance. \\n\\nHowever, one related "
     },
     {
       "step": 4,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:osfi-bsif.gc.ca november 2026"
+        "query": "\"artificial intelligence\" site:consumerfinance.gov"
       },
-      "result_preview": "[{'search_summary': \"There are **no official announcements** regarding artificial intelligence (AI) published by the Office of the Superintendent of Financial Institutions (OSFI) on `osfi-bsif.gc.ca` within the past 7 days (November 11 \u2013 November 18, 2026). \\n\\n***\\n\\nFor context, the most recent official OSFI publications and announcements addressing AI leading up to this period include:\\n\\n* **October 23, 2026 \u2013 *OSFI's approach to responsible AI adoption***  \\n  An overview and infographic ou"
+      "result_preview": "[{'search_summary': 'Based on a search of the Consumer Financial Protection Bureau\u2019s website (`consumerfinance.gov`), there were **no** official announcements, press releases, or regulatory guidance regarding \"artificial intelligence\" published in the past 7 days (between November 11, 2026, and November 18, 2026).'}]"
     },
     {
       "step": 4,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" site:ised-isde.canada.ca november 2026"
+        "query": "\"artificial intelligence\" site:ftc.gov"
       },
-      "result_preview": "[{'search_summary': 'Official government announcements and updates from Innovation, Science and Economic Development Canada (**site:ised-isde.canada.ca**) and the Minister of Artificial Intelligence and Digital Innovation within the past 7 days (November 11\u201318, 2026) include the following:\\n\\n* **November 13, 2026** \u2014 **Innovative Solutions Canada: AI Governance Challenge Update**\\n  * **What it is:** An updated open funding opportunity under ISED\\'s Innovative Solutions Canada program for the c"
+      "result_preview": "[{'search_summary': 'During the 7-day window from **November 11, 2026, through November 18, 2026**, there have been **no official announcements, press releases, or policy statements** concerning artificial intelligence published on [ftc.gov](https://www.ftc.gov).\\n\\nFor context, the official FTC announcements and consumer alerts issued during this period addressed other regulatory actions and consumer protection matters:\\n\\n* **November 16, 2026 \u2013 Consumer Alert:** *Three new tactics scammers us"
     },
     {
       "step": 4,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" site:ftc.gov november 2026"
+        "query": "\"artificial intelligence\" site:sec.gov"
       },
-      "result_preview": "[{'search_summary': 'There were **no official government or regulatory announcements regarding artificial intelligence** issued by the Federal Trade Commission (FTC) on [ftc.gov](https://www.ftc.gov). \\n\\n### Context & Incidental Mentions:\\n* **Administrative Docket Filings (November 12, 2026):** Incidental references to \"artificial intelligence\" appeared only in routine procedural boilerplate certificates of service filed in administrative proceedings (e.g., *In the Matter of Ricardo A. Murillo"
+      "result_preview": "[{'search_summary': 'For the 7-day period from **November 11, 2026 to November 18, 2026**, there is **one official regulator announcement/speech** published on SEC.gov regarding artificial intelligence:\\n\\n---\\n\\n### **Official SEC Announcement / Speech**\\n\\n* **Date:** November 11, 2026  \\n* **Title:** *The Economics of Attention* (Speech)  \\n* **Speaker:** Joshua White, Chief Economist and Director of the SEC\u2019s Division of Economic and Risk Analysis (DERA)  \\n* **What it is:**  \\n  An official"
     },
     {
       "step": 4,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" site:consumerfinance.gov november 2026"
+        "query": "\"artificial intelligence\" site:treasury.gov"
       },
-      "result_preview": "[{'search_summary': 'A search of official announcements and publications from the Consumer Financial Protection Bureau (CFPB) on [consumerfinance.gov](https://www.consumerfinance.gov) indicates that **no official announcements, press releases, or guidance regarding \"artificial intelligence\" were published in the past 7 days (November 11, 2026 \u2013 November 18, 2026)**.\\n\\n---\\n\\n### Key Prior CFPB Actions on Artificial Intelligence (for context)\\nWhile there have been no new releases in the past 7 "
+      "result_preview": "[{'search_summary': 'There are **no official announcements, press releases, or regulatory actions regarding \"artificial intelligence\"** published on `treasury.gov` during the past 7 days (November 11\u201318, 2026).\\n\\n---\\n\\n### Context: Recent Treasury Activity\\n\\n#### Announcements During the Past 7 Days (Non-AI Related)\\nDuring this 7-day period, Treasury releases addressed unrelated matters:\\n* **November 17, 2026:** FinCEN Notice of Proposed Rulemaking to strengthen Customer Due Diligence requi"
     },
     {
       "step": 5,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:sec.gov november 2026"
+        "query": "\"artificial intelligence\" site:bankofcanada.ca"
       },
-      "result_preview": "[{'search_summary': '**No official regulatory actions, policy statements, or agency press releases** were issued by the U.S. Securities and Exchange Commission (SEC) itself regarding artificial intelligence [1.1.1\u20131.1.9, 1.2.1\u20131.2.9]. \\n\\nThe items appearing on `sec.gov` during this window are public company filings and registrant press releases furnished to the SEC via the EDGAR system. The relevant filings matching the query include:\\n\\n* **November 12, 2026 \u2013 Rain Enhancement Technologies Hol"
+      "result_preview": "[{'search_summary': \"There are **no official government or regulator announcements** about artificial intelligence published on [bankofcanada.ca](https://www.bankofcanada.ca) in the past 7 days (November 11\u201318, 2026). \\n\\nThe only activity on the site specifically mentioning artificial intelligence during this 7-day window consists of internal recruitment/job postings:\\n* **November 2026 (Open until November 24, 2026):** **Job Posting \u2013 Application Development Lead (Artificial Intelligence)** an"
     },
     {
       "step": 5,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:tbs-sct.gc.ca november 2026"
+        "query": "\"artificial intelligence\" site:canada.ca \"November\" 2026"
       },
-      "result_preview": "[{'search_summary': 'A search of official announcements from the **Treasury Board of Canada Secretariat (`tbs-sct.gc.ca`)** over the past 7 days (November 11\u201318, 2026) indicates that **no official announcements specifically focused on artificial intelligence (AI) were issued** during this window.\\n\\n### Context & Related Recent Activity\\n* **Past 7-Day TBS Announcements:** Announcements released by the Secretariat between November 11 and November 18, 2026, focused primarily on:\\n  * **November 1"
-    },
-    {
-      "step": 5,
-      "tool": "web_search",
-      "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:federalreserve.gov november 2026"
-      },
-      "result_preview": "[{'search_summary': 'Relevant official releases and publications from the Federal Reserve Board (`federalreserve.gov`) from November 11 to November 18, 2026 include:\\n\\n* **November 16, 2026 \u2013 Speech by Governor Michael S. Barr:**\\n  * **Title:** *\"Some Potential Financial Stability Implications of Artificial Intelligence\"*\\n  * **Summary:** Delivered at the 7th ACM International Conference on AI in Finance in Milan, Italy, this speech examines the opportunities and risks AI presents to the fina"
-    },
-    {
-      "step": 5,
-      "tool": "web_search",
-      "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:occ.treas.gov november 2026"
-      },
-      "result_preview": "[{'search_summary': \"In the past 7 days (November 11\u201318, 2026), the Office of the Comptroller of the Currency (OCC) released the following relevant announcement touching on artificial intelligence:\\n\\n* **Date:** November 12, 2026  \\n  **Item:** **News Release 2026-99 & *Semiannual Risk Perspective* (Fall 2026)**  \\n  **Details:** The OCC published its Fall 2026 *Semiannual Risk Perspective* report highlighting key risks facing the federal banking system. The report and accompanying release disc"
-    },
-    {
-      "step": 5,
-      "tool": "web_search",
-      "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:treasury.gov november 2026"
-      },
-      "result_preview": "[{'search_summary': \"A search of official announcements from the U.S. Department of the Treasury (`treasury.gov`) reveals that **no official announcements or press releases concerning artificial intelligence (AI) were issued during the past 7 days (November 11, 2026 \u2013 November 18, 2026)**.\\n\\nThe releases from the Treasury during this 7-day window focused on other matters (such as FinCEN's proposed rule on Customer Due Diligence and IRS final regulations for SECURE 2.0 workplace retirement plans"
+      "result_preview": "[{'search_summary': \"Official announcements and advisories published on **canada.ca** during the past 7 days (November 11\u201318, 2026) involving the Ministry of Artificial Intelligence and Digital Innovation or citing artificial intelligence include:\\n\\n* **November 11, 2026** \u2014 *Parliamentary Secretary Noormohamed to highlight Budget 2026 investments in affordability* (Media Advisory)\\n  * **What it is:** Announcement that Taleeb Noormohamed, Parliamentary Secretary to the Minister of Artificial I"
     },
     {
       "step": 6,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" OR \"AI\" site:bankofcanada.ca november 2026"
+        "query": "\"Artificial Intelligence\" \"decision-making process visibility, traceability\" site:ised-isde.canada.ca"
       },
-      "result_preview": "[{'search_summary': 'Between **November 11, 2026, and November 18, 2026** (the past 7 days), the Bank of Canada published **no** official regulator announcements or policy decisions dedicated to artificial intelligence. \\n\\nThe most closely adjacent official Bank of Canada publication that directly addressed AI was issued 8 days ago:\\n\\n* **November 10, 2026 \u2013 Summary of Governing Council Deliberations (Fixed Announcement Date of October 28, 2026)**\\n  * **What it is:** The official account of t"
+      "result_preview": "[{'search_summary': \"A relevant funding and procurement challenge on `ised-isde.canada.ca` matches these search parameters:\\n\\n* **Title:** **Artificial Intelligence (AI) decision-making process visibility, traceability and compliance governance**\\n* **Sponsoring Agency:** Shared Services Canada (SSC) via Innovation, Science and Economic Development Canada (ISED) / Innovative Solutions Canada (ISC)\\n* **Date:** \\n  * **Updated / Listed in Open Funding Opportunities:** November 13, 2026 *(Challen"
     },
     {
       "step": 6,
       "tool": "web_search",
       "args": {
-        "query": "\"artificial intelligence\" regulation OR policy site:gc.ca OR site:canada.ca november 2026"
+        "query": "\"artificial intelligence\" site:tbs-sct.gc.ca"
       },
-      "result_preview": "[{'search_summary': 'Official Government of Canada announcements, policy updates, and regulatory notices from the past 7 days (November 11\u201318, 2026) regarding artificial intelligence and related policy:\\n\\n* **November 16, 2026 \u2013 Statistics Canada:**\\n  * **Announcement / Survey Deployment on AI & Digital Adoption:** Statistics Canada updated collection protocols for the *Canadian Survey on Digital Life* and related labour market indicators. The initiative gathers evidence on how Canadians and b"
-    },
-    {
-      "step": 6,
-      "tool": "web_search",
-      "args": {
-        "query": "\"artificial intelligence\" \"state\" bill OR law OR \"executive order\" november 2026"
-      },
-      "result_preview": "[{'search_summary': 'Relevant official government and regulator announcements from the past 7 days (November 11\u201318, 2026) regarding artificial intelligence and related executive orders, bills, or laws include:\\n\\n* **November 16, 2026 \u2013 U.S. Food and Drug Administration (FDA)**\\n  * **Announcement / Regulatory Action:** Official guidance/notice on the implementation of **Executive Order 14434** (*Inaugurating the Era of Super Intelligence*). Beginning November 16, 2026, the FDA is transitioning "
+      "result_preview": "[{'search_summary': 'Official announcements and publications from the **Treasury Board of Canada Secretariat** (`tbs-sct.gc.ca`) from the past 7 days (November 11\u201318, 2026) regarding artificial intelligence include:\\n\\n* **Date:** November 17, 2026\\n  * **Announcement / Report:** *Reducing Red Tape in the Government of Canada: Progress and Way Forward* (accompanied by the official news release: *\u201cGovernment of Canada releases Progress Report and Way Forward on Reducing Red Tape\u201d*).\\n  * **Summar"
     },
     {
       "step": 7,
-      "tool": "read_webpage",
-      "args": {
-        "url": "https://council.nyc.gov/press/2026/11/12/3339/"
-      },
-      "result_preview": "{'url': 'https://council.nyc.gov/press/2026/11/12/3339/', 'text': 'New York City Council Approves Landmark Legislation Banning Surveillance Pricing - Press\\nSkip to main content\\nTranslate this page\\n\u2715\\nGoogle Translate\\nNew York City Council Approves Landmark Legislation Banning Surveillance Pricing\\nNovember 12, 2026\\nSpeaker Julie Menin\u2019s legislation will prevent companies from using personal data to offer different prices to different New Yorkers\\nCouncil also passes legislative package in h"
-    },
-    {
-      "step": 8,
       "tool": "read_webpage",
       "args": {
         "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act"
@@ -351,105 +241,177 @@
       "result_preview": "{'url': 'https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act', 'text': 'Commission seeks feedback on draft template for the fundamental rights impact assessment under the AI Act | Shaping Europe\u2019s digital future\\nSkip to main content\\nCommission seeks feedback on draft template for the fundamental rights impact assessment under the AI Act\\nNEWS ARTICLE\\nPublication 16 November 2026\\nThe Commission is collecting "
     },
     {
-      "step": 9,
-      "tool": "web_search",
+      "step": 7,
+      "tool": "read_webpage",
       "args": {
-        "query": "\"C_202606005\" OR \"Article 50\" \"transparency obligations\" \"AI Act\" \"November 12, 2026\" OR \"November 2026\""
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-invites-views-draft-revised-election-guidelines-under-digital-services-act"
       },
-      "result_preview": "[{'search_summary': \"Official government and regulatory publications from the past 7 days (November 11\u201318, 2026) show the following relevant announcement:\\n\\n* **Publication Date:** November 12, 2026\\n* **Issuing Body:** European Commission (Directorate-General for Communications Networks, Content and Technology)\\n* **Official Reference:** OJ C, C/2026/6005 (EUR-Lex ID: `C_202606005` / `52026XC06005`; Commission Communication: `C(2026) 7702 final`)\\n* **Title:** *Communication from the Commissio"
+      "result_preview": "{'url': 'https://digital-strategy.ec.europa.eu/en/news/commission-invites-views-draft-revised-election-guidelines-under-digital-services-act', 'text': 'Commission invites views on draft revised election guidelines under Digital Services Act | Shaping Europe\u2019s digital future\\nSkip to main content\\nCommission invites views on draft revised election guidelines under Digital Services Act\\nPRESS RELEASE\\nPublication 10 November 2026\\nThe European Commission launched a consultation to update its elect"
+    },
+    {
+      "step": 8,
+      "tool": "read_webpage",
+      "args": {
+        "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers"
+      },
+      "result_preview": "{'url': 'https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers', 'text': 'Call for Expression of Interest for European AI providers | Shaping Europe\u2019s digital future\\nSkip to main content\\nCall for Expression of Interest for European AI providers\\nNEWS ARTICLE\\nPublication 17 November 2026\\nThe European Commission\u2019s AI Office is launching a call for expression of interest for European AI providers to present AI solutions to the network of European Digital I"
+    },
+    {
+      "step": 8,
+      "tool": "read_webpage",
+      "args": {
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake"
+      },
+      "result_preview": "{'url': 'https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake', 'text': 'Commission hosts Apply AI Summit to boost Europe\u2019s AI innovation and uptake | Shaping Europe\u2019s digital future\\nSkip to main content\\nCommission hosts Apply AI Summit to boost Europe\u2019s AI innovation and uptake\\nPRESS RELEASE\\nPublication 16 November 2026\\nNearly 1,000 high-level policymakers, start-ups, industry leaders and researchers will take part in the App"
+    },
+    {
+      "step": 8,
+      "tool": "read_webpage",
+      "args": {
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.ga.html"
+      },
+      "result_preview": "{'url': 'https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.ga.html', 'text': \"Risks and resilience in the euro area financial system\\nSkip to:\\nSkip to \\nnavigation\\nSkip to \\ncontent\\nSkip to \\nfooter\\nANYTIME \\nPAST MONTH \\nPAST YEAR \\nSearch Options\\nImage Preview\\nSort by\\nANYTIME \\nPAST MONTH \\nPAST YEAR \\nSuggestions\\nHome\\nPublication\\nExplainers\\nStatistics\\nPayments\\nCareer\\nMonetary Policy\\nSuggestions\\nSort by\\nRelevance\\r\\nDate\\r\\nBoris Vuj\u010di\u0107\\nVice-President"
+    },
+    {
+      "step": 8,
+      "tool": "read_webpage",
+      "args": {
+        "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/"
+      },
+      "result_preview": "{'url': 'https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/', 'text': 'Quad Leaders\u2019 Summit Joint Press Release \u2013 The White House\\nSkip to content\\nBriefings & Statements\\n\\t\\t\\t\\t\\tQuad Leaders\u2019 Summit Joint Press Release\\t\\t\\t\\t\\n\\tThe White House\\nNovember 17, 2026\\nOn November 17, 2026 \u2014 President Donald J. Trump of the United States, Prime Minister Anthony Albanese of Australia, Prime Minister Narendra Modi of India, and Prime Minister Takaichi "
+    },
+    {
+      "step": 9,
+      "tool": "read_webpage",
+      "args": {
+        "url": "https://www.sec.gov/newsroom/speeches-statements/white-economics-attention-nacd-111126"
+      },
+      "result_preview": "{'error': 'HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/newsroom/speeches-statements/white-economics-attention-nacd-111126'}"
     },
     {
       "step": 10,
       "tool": "read_webpage",
       "args": {
-        "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm"
+        "url": "https://ised-isde.canada.ca/site/innovative-solutions-canada/en/artificial-intelligence-ai-decision-making-process-visibility-traceability-and-compliance-governance"
       },
-      "result_preview": "{'url': 'https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm', 'text': '\u00ef\u00bb\u00bf\\nSpeech by Governor Barr on some potential financial stability implications of artificial intelligence - Federal Reserve Board\\nSkip to main content\\nAn official website of the United States Government\\nHere\\'s how you know\\nOfficial websites use .gov\\nA \\n.gov\\n website belongs to an official government organization in the United States.\\nSecure .gov websites use HTTPS\\nA \\nlock\\n (\\nLock\\nLocked padlock "
+      "result_preview": "{'url': 'https://ised-isde.canada.ca/site/innovative-solutions-canada/en/artificial-intelligence-ai-decision-making-process-visibility-traceability-and-compliance-governance', 'text': \"Artificial Intelligence (AI) decision-making process visibility, traceability and compliance governance\\nArtificial Intelligence (AI) decision-making process visibility, traceability and compliance governance\\nFrom: \\nInnovation, Science and Economic Development Canada\\nShared Services Canada (SSC) is interested i"
     },
     {
       "step": 11,
       "tool": "read_webpage",
       "args": {
-        "url": "https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-99.html"
+        "url": "https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/red-tape-reduction-office/red-tape-review/reducing-red-tape-government-canada-progress-way-forward.html"
       },
-      "result_preview": "{'url': 'https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-99.html', 'text': \"OCC\u00e2\\x80\\x99s Semiannual Risk Perspective Highlights Key Risks in Federal Banking System | OCC\\nSkip to main content\\nAn official website of the United States government\\nCareers\\nQuick Access\\nMost Requested\\nBank Secrecy Act (BSA)\\nContact Us\\nCommunity Reinvestment Act (CRA)\\nComptroller's Handbook\\nCorporate Applications Search\\nEnforcement Action Search\\nFinancial Institution Lists\\nNewsroom\\"
+      "result_preview": "{'url': 'https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/red-tape-reduction-office/red-tape-review/reducing-red-tape-government-canada-progress-way-forward.html', 'text': 'Reducing Red Tape in the Government of Canada: Progress and Way Forward - Canada.ca\\nReducing Red Tape in the Government of Canada: Progress and Way Forward\\nOn this page\\nMessage from the President of the Treasury Board\\nIntroduction\\nDepartmental actions: progress and looking ahead\\nT"
     },
     {
       "step": 12,
-      "tool": "read_webpage",
+      "tool": "web_search",
       "args": {
-        "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/"
+        "query": "\"artificial intelligence\" site:priv.gc.ca"
       },
-      "result_preview": "{'url': 'https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/', 'text': 'Quad Leaders\u2019 Summit Joint Press Release \u2013 The White House\\nSkip to content\\nBriefings & Statements\\n\\t\\t\\t\\t\\tQuad Leaders\u2019 Summit Joint Press Release\\t\\t\\t\\t\\n\\tThe White House\\nNovember 17, 2026\\nOn November 17, 2026, \u2014 President Donald J. Trump of the United States, Prime Minister Anthony Albanese of Australia, Prime Minister Narendra Modi of India, and Prime Minister Takaichi"
+      "result_preview": "[{'search_summary': 'Official government and regulator publications from the Office of the Privacy Commissioner of Canada (OPC) on `priv.gc.ca` for the past 7 days (November 11\u201318, 2026) include the following relevant announcement:\\n\\n* **November 16, 2026 \u2014 Speech: *Remarks by the Privacy Commissioner to the CAN-Tech Law Conference***\\n  * **Summary:** An address by Privacy Commissioner Philippe Dufresne discussing privacy regulation in the AI era. The Commissioner highlights the need for a hum"
+    },
+    {
+      "step": 12,
+      "tool": "web_search",
+      "args": {
+        "query": "\"artificial intelligence\" site:ontario.ca \"November 2026\""
+      },
+      "result_preview": "[{'search_summary': 'For the strict 7-day window between **November 11, 2026, and November 18, 2026**, there were **no official Ontario government or regulator announcements** published on `ontario.ca` regarding artificial intelligence.\\n\\n---\\n\\n### Closest Preceding Announcement (Just Outside the 7-Day Window)\\n\\n* **Date:** November 9, 2026\\n* **Announcement:** *Ontario Investing Over $7.1 Million to Support Veterans, Military Personnel and First Responders* (Ministry of Labour, Immigration, "
+    },
+    {
+      "step": 12,
+      "tool": "web_search",
+      "args": {
+        "query": "\"intelligence artificielle\" site:quebec.ca \"novembre 2026\""
+      },
+      "result_preview": "[{'search_summary': \"Between November 11 and November 18, 2026, the following official government announcements, regulatory notices, and publications referencing artificial intelligence appeared on **quebec.ca**:\\n\\n1. **November 17, 2026 \u2014 Palais des congr\u00e8s de Montr\u00e9al**  \\n   * **Announcement:** *Brain & Brain PET : Montr\u00e9al accueillera 1 000 sp\u00e9cialistes du cerveau en 2029*  \\n   * **Summary:** Official announcement confirming that Montreal will host the Brain & Brain PET 2029 conference, hi"
     },
     {
       "step": 13,
       "tool": "web_search",
       "args": {
-        "query": "\"Executive Order 14434\""
+        "query": "\"CAN-Tech Law\" site:priv.gc.ca"
       },
-      "result_preview": "[{'search_summary': 'Between November 11 and November 18, 2026, several federal agencies and regulators issued official notices, rules, and policy updates implementing or referencing **Executive Order 14434** (*\u201cInaugurating the Era of Super Intelligence\u201d*, which directs executive branch agencies to replace the terms \u201cArtificial Intelligence\u201d/\u201cAI\u201d with \u201cSuper Intelligence\u201d/\u201cSI\u201d):\\n\\n* **Department of Labor / Bureau of Labor Statistics (BLS)** \\n  * **Date:** November 17, 2026 (published November"
+      "result_preview": "[{'search_summary': 'During the past 7 days (November 11\u201318, 2026), there was **one** official announcement published on the Office of the Privacy Commissioner of Canada (OPC) website (`priv.gc.ca`) mentioning \"CAN-Tech Law\":\\n\\n* **Date:** November 16, 2026\\n* **Type:** Official Speech / Remarks\\n* **Title:** *Remarks by the Privacy Commissioner to the CAN-Tech Law Conference*\\n* **Summary:** An address delivered by Philippe Dufresne, Privacy Commissioner of Canada, covering key strategic prior"
     },
     {
       "step": 14,
-      "tool": "search_federal_register",
+      "tool": "read_webpage",
       "args": {
-        "query": "\"Super Intelligence\""
+        "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/"
       },
-      "result_preview": "[{'title': 'Attorney General Memorandum on Implementing English as the Official Language; Request for Information', 'url': 'https://www.federalregister.gov/documents/2026/11/12/2026-22966/attorney-general-memorandum-on-implementing-english-as-the-official-language-request-for-information', 'date': '2026-11-12', 'type': 'Notice', 'agency': 'Justice Department', 'summary': 'This notice announces the Department of Justice\\'s (\"Department\") issuance of a memorandum titled \"Guidance on Implementing E"
+      "result_preview": "{'url': 'https://www.priv.gc.ca/en/opc-news/news-and-announcements/', 'text': 'News and announcements - Office of the Privacy Commissioner of Canada\\nSkip to main content\\nSkip to \"About this site\"\\nNews and announcements\\nGet the latest news and information from the OPC.\\nSpeech\\nNovember 16, 2026\\nRemarks by the Privacy Commissioner to the CAN-Tech Law Conference\\nSpeech\\nNovember 10, 2026\\nInnovating for Privacy, Building Trust: Navigating AI, Data and Regulation\\nGlobal Data Centre & Cloud E"
     },
     {
       "step": 15,
       "tool": "web_search",
       "args": {
-        "query": "\"2026-23506\" OR \"2026-23529\""
+        "query": "\"Remarks by the Privacy Commissioner to the CAN-Tech Law Conference\" site:priv.gc.ca"
       },
-      "result_preview": "[{'search_summary': \"The official U.S. government regulatory announcements from the past 7 days matching those document numbers are:\\n\\n---\\n\\n### 1. **FR Doc. 2026-23506**\\n* **Filing Date:** November 17, 2026 *(Scheduled publication: November 18, 2026)*\\n* **Agency:** Department of Labor (DOL) / Bureau of Labor Statistics (BLS)\\n* **Type:** Notice of Agency Information Collection Activities\\n* **Title:** *American Time Use Survey (ATUS) Super Intelligence Questions* (OMB Control No. 1220-0NEW)"
+      "result_preview": "[{'search_summary': 'An official announcement and speech published by the Office of the Privacy Commissioner of Canada (OPC) on `priv.gc.ca` covers this event:\\n\\n* **Item:** **Speech: Remarks by the Privacy Commissioner to the CAN-Tech Law Conference**\\n  * **Published by OPC:** November 16, 2026 *(Delivered on October 15, 2026, in Ottawa, ON)*\\n  * **Speaker:** Philippe Dufresne, Privacy Commissioner of Canada\\n  * **Summary / Key Highlights:**\\n    * **Theme:** Centered on the conference them"
     },
     {
       "step": 16,
       "tool": "read_webpage",
       "args": {
-        "url": "https://public-inspection.federalregister.gov/2026-23529.pdf"
+        "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ai-requires-rigorous-safeguards-and-rules-keep-pace-technological-advances-experts-tell-european-2026-11-16_en"
       },
-      "result_preview": "{'url': 'https://public-inspection.federalregister.gov/2026-23529.pdf', 'text': '%PDF-1.7\\n%\ufffd\ufffd\ufffd\ufffd\\n1 0 obj\\n<< /Pages 2 0 R /Type /Catalog >>\\nendobj\\n2 0 obj\\n<< /Count 117 /Kids [ 3 0 R 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R 45 0 R 46 0 R 47 0 R 48 0 R 49 0"
+      "result_preview": "{'url': 'https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ai-requires-rigorous-safeguards-and-rules-keep-pace-technological-advances-experts-tell-european-2026-11-16_en', 'text': 'AI requires rigorous safeguards and rules that keep pace with technological advances\u2013 experts tell the European Commission  - Research and innovation\\nSkip to main content\\nAI requires rigorous safeguards and rules that keep pace with technological advances\u2013 experts tell the European C"
     },
     {
       "step": 17,
-      "tool": "web_search",
+      "tool": "read_webpage",
       "args": {
-        "query": "\"Canada\" \"artificial intelligence\" bill OR regulation OR law november 2026"
+        "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23300/draft-policy-update-to-the-nih-policy-for-data-and-safety-monitoring"
       },
-      "result_preview": "[{'search_summary': 'During the past 7 days (November 11\u201318, 2026), the following official Canadian government legislative announcement regarding artificial intelligence occurred:\\n\\n### **Saskatchewan: Introduction of *The Prevention of Deceptive Artificial Intelligence Act* (Bill No. 76)**\\n* **Date:** November 17, 2026\\n* **Jurisdiction / Authority:** Government of Saskatchewan (introduced in the Legislative Assembly by Justice Minister and Attorney General Tim McLeod)\\n* **What it is:** \\n  "
+      "result_preview": "{'url': 'https://unblock.federalregister.gov', 'text': 'Federal Register :: Request Access\\nRequest Access\\n  Due to aggressive automated scraping of FederalRegister.gov and eCFR.gov,\\n  programmatic access to these sites is limited to access to our extensive\\n  developer APIs. Please visit\\n    FederalRegister.gov API\\n  documentation or\\n    eCFR.gov API\\n  documentation to learn more about how to access the API.\\n  Your request has been flagged as potentially automated. If you are human user\\"
     },
     {
       "step": 18,
       "tool": "web_search",
       "args": {
-        "query": "site:saskatchewan.ca \"Prevention of Deceptive Artificial Intelligence Act\" OR \"deepfake\" november 2026"
+        "query": "\"artificial intelligence\" site:cisa.gov \"November 2026\""
       },
-      "result_preview": "[{'search_summary': \"Relevant official government and legislative items regarding the **Prevention of Deceptive Artificial Intelligence Act** / deceptive AI deepfakes from the past 7 days (November 11\u201318, 2026):\\n\\n* **November 17, 2026 \u2013 Introduction of Bill No. 76 (*The Prevention of Deceptive Artificial Intelligence Act*) & Government Announcement**:\\n  * **What it is:** Minister of Justice and Attorney General Tim McLeod formally introduced Bill No. 76 in the Legislative Assembly of Saskatch"
+      "result_preview": "[{'search_summary': \"In the past 7 days (November 11\u201318, 2026), CISA did not issue any new major regulatory policy directives or press releases regarding artificial intelligence. \\n\\nHowever, official updates and publication entries concerning AI were published on CISA's portal\u2014primarily through its **National Initiative for Cybersecurity Careers and Studies (NICCS)** catalog on **November 12, 2026**:\\n\\n* **Threat Analysis with Artificial Intelligence (AI)** (Published: *November 12, 2026*): A "
+    },
+    {
+      "step": 18,
+      "tool": "web_search",
+      "args": {
+        "query": "\"artificial intelligence\" site:nist.gov \"November 2026\""
+      },
+      "result_preview": "[{'search_summary': \"Based on official announcements and publications on **nist.gov** for the 7-day window (**November 11\u201318, 2026**):\\n\\n### During the Past 7 Days (Nov 11\u201318, 2026)\\n\\n* **TREC 2026 (Text REtrieval Conference)** \\n  * **Dates:** November 16\u201318, 2026\\n  * **Summary:** An annual NIST evaluation workshop focusing on large-scale information retrieval and AI evaluations. The 2026 session specifically features generative and frontier AI tracks, including *Million LLM*, *Retrieval Aug"
     },
     {
       "step": 19,
-      "tool": "read_webpage",
+      "tool": "web_search",
       "args": {
-        "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Orders/30L3S/20261117Orders-HTML.htm?v=20261117023902"
+        "query": "\"artificial intelligence\" site:eba.europa.eu \"November 2026\""
       },
-      "result_preview": "{'url': 'https://docs.legassembly.sk.ca/legdocs/Assembly/Orders/30L3S/20261117Orders-HTML.htm?v=20261117023902', 'text': 'November 17, 2026 Orders\\nCONTENTS\\nROUTINE\\r\\nPROCEEDINGS\\nIntroduction\\r\\nof Guests\\nPresenting\\r\\nPetitions\\nReading\\r\\nand Receiving Petitions\\nStatements\\r\\nby Members\\nQuestion\\r\\nPeriod\\nMinisterial\\r\\nStatements\\nIntroduction\\r\\nof Bills\\nPresenting\\r\\nReports by Standing and Special Committees\\nORDERS OF THE DAY\\nGOVERNMENT\\r\\nORDERS\\nAdjourned\\r\\nDebates / D\u00e9bats aj"
+      "result_preview": "[{'search_summary': 'Within the past 7 days (**11 November 2026 \u2013 18 November 2026**), the European Banking Authority (EBA) released the following official materials referencing artificial intelligence (AI):\\n\\n* **11\u201313 November 2026 | EBA Annual Data and Reporting Workshop (Presentations & Materials)**\\n  * **What it is:** Materials and presentations published in connection with the three-day workshop on the future of regulatory and supervisory reporting. \\n  * **AI relevance:** In the session"
+    },
+    {
+      "step": 19,
+      "tool": "web_search",
+      "args": {
+        "query": "\"artificial intelligence\" site:esma.europa.eu \"November 2026\""
+      },
+      "result_preview": "[{'search_summary': 'Based on a search of **esma.europa.eu** for the 7-day window leading up to today (11 November 2026 \u2013 18 November 2026), **no official announcements or regulatory publications specifically focused on artificial intelligence were issued**.\\n\\n### Publications on ESMA during the past 7 days:\\n* **17 November 2026 \u2013 Guidelines on Product Supplements:** ESMA published guidelines (ref: ESMA32-753890202-3098) clarifying the circumstances under which a supplement is considered to in"
     },
     {
       "step": 20,
       "tool": "save_finding",
       "args": {
-        "title": "European Commission Guidelines on AI Act Article 50 Transparency Obligations",
-        "jurisdiction": "European Union",
+        "date": "2026-11-16",
+        "what_happened": "The European Commission and the AI Office launched a public consultation and pilot testing program for a draft questionnaire template and explanatory notice under Article 27 of the AI Act. The template guides deployers of high-risk AI systems in evaluating impacts on fundamental rights before deployment.",
+        "title": "European Commission Consults on AI Act Fundamental Rights Impact Assessment Template",
+        "why_it_matters": "The guidance directly affects public bodies and private deployers of high-risk AI, including financial institutions deploying AI for credit scoring and life or health insurance risk assessments. Covered deployers must complete and submit these assessments to market surveillance authorities prior to deployment ahead of the December 2027 enforcement deadline.",
         "importance": "medium",
-        "date": "2026-11-12",
-        "what_happened": "The European Commission formally published interpretive guidelines under Article 96(1)(d) of Regulation (EU) 2024/1689 (the AI Act) regarding compliance with the Article 50 transparency obligations for AI systems. The guidance clarifies requirements for AI interaction notices (such as customer chatbots), synthetic media marking, emotion recognition/biometric categorisation disclosures, and deepfake labelling.",
-        "why_it_matters": "This provides binding national market surveillance authorities and private deployers\u2014including financial institutions using customer-facing chatbots or synthetic content\u2014with explicit compliance benchmarks ahead of statutory enforcement deadlines.",
-        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C_202606005",
-        "financial_services": true
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
+        "financial_services": true,
+        "jurisdiction": "European Union"
       },
       "result_preview": "{'saved': True, 'total_findings': 1}"
     },
@@ -457,14 +419,14 @@
       "step": 21,
       "tool": "save_finding",
       "args": {
-        "what_happened": "The European Commission and AI Office launched a public consultation and pilot testing call on a draft template and explanatory notice for deployers of high-risk AI systems to conduct Fundamental Rights Impact Assessments (FRIAs) under Article 27 of the AI Act. The consultation runs until January 15, 2027, with an open call for high-risk deployers to test the draft framework ending December 4, 2026.",
+        "why_it_matters": "Euro area banks and financial intermediaries face heightened supervisory expectations from ECB Banking Supervision to adapt risk management frameworks, strengthen cyber defences, and manage critical dependencies on a concentrated set of cloud and AI service providers.",
         "date": "2026-11-16",
-        "importance": "medium",
+        "financial_services": true,
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.ga.html",
+        "what_happened": "In an address previewing the Financial Stability Review, ECB Vice-President Boris Vujcic identified AI as a top systemic risk to the euro area financial system, citing massive corporate debt issuance across the AI supply chain, market concentration, and rapid advances in AI cyber capabilities. The ECB also published an early-release special feature analyzing the cyber-AI nexus.",
         "jurisdiction": "European Union",
-        "why_it_matters": "Deployers of high-risk AI, including financial institutions utilizing AI in credit scoring and life/health insurance risk assessment, will be required to complete and submit this assessment to market surveillance authorities prior to deploying high-risk AI systems.",
-        "title": "European Commission Consults on Draft Fundamental Rights Impact Assessment Template under AI Act",
-        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act",
-        "financial_services": true
+        "title": "ECB Highlights AI Debt Financing and Cyber Threats as Key Financial Stability Risks",
+        "importance": "medium"
       },
       "result_preview": "{'saved': True, 'total_findings': 2}"
     },
@@ -472,14 +434,14 @@
       "step": 22,
       "tool": "save_finding",
       "args": {
-        "why_it_matters": "Signals coordinated cross-border supervisory scrutiny of AI adoption by banks and financial market participants across the EU and UK, focusing on operational resilience and third-party tech dependencies.",
-        "url": "https://finance.ec.europa.eu/publications/sixth-meeting-joint-eu-uk-financial-regulatory-forum-november-2026_en",
-        "financial_services": true,
+        "importance": "low",
+        "title": "EU AI Office Launches Call for SME-Ready AI Solutions",
+        "what_happened": "The European Commission's AI Office opened a call for expression of interest for up to 100 European AI providers with mature, deployment-ready solutions to join a dedicated catalogue on the AI-on-Demand Platform.",
+        "why_it_matters": "The initiative enables the European Digital Innovation Hubs network to connect European small and medium-sized enterprises with vetted European AI tools to accelerate adoption under the EU Apply AI Strategy.",
         "jurisdiction": "European Union",
-        "title": "Joint EU-UK Financial Regulatory Forum Addresses Emerging AI and Operational Risks",
-        "importance": "medium",
-        "what_happened": "Senior officials from DG FISMA, the ECB, EBA, ESMA, EIOPA, HM Treasury, the Bank of England, and the FCA convened for the Sixth Joint EU-UK Financial Regulatory Forum, issuing a joint statement addressing financial stability and digital finance. Regulators specifically highlighted evolving operational, cyber, and stability risks stemming from artificial intelligence and agreed to deepen bilateral supervisory coordination.",
-        "date": "2026-11-12"
+        "date": "2026-11-17",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers",
+        "financial_services": false
       },
       "result_preview": "{'saved': True, 'total_findings': 3}"
     },
@@ -487,127 +449,22 @@
       "step": 23,
       "tool": "save_finding",
       "args": {
-        "why_it_matters": "Establishes operational and technical expectations for pharmaceutical companies and regulators regarding data integrity, model explainability, and risk mitigation when deploying AI in clinical pipelines.",
-        "importance": "medium",
-        "url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence/artificial-intelligence-guidance",
-        "date": "2026-11-11",
-        "jurisdiction": "European Union",
-        "what_happened": "The European Medicines Agency (EMA) published updated regulatory guidance and governance principles governing the use and integration of artificial intelligence within the European medicines regulatory network. Formulated under the Network Data Steering Group's 2025\u20132028 workplan, the release sets out guidelines for AI application across drug development, clinical trials, and regulatory evaluations.",
+        "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/",
         "financial_services": false,
-        "title": "European Medicines Agency Releases Guidance and Governance Framework for AI in Medicines"
+        "title": "Quad Leaders Establish Super Intelligence Accelerator for Regional AI Deployment",
+        "why_it_matters": "The multilateral commitment aligns regional allies around AI funding, shared technical capacity, and supply chain security while advancing the U.S. administration's executive designation of Super Intelligence as its standard terminology.",
+        "jurisdiction": "United States",
+        "what_happened": "At the Quad Leaders' Summit in Manila, the leaders of the United States, Australia, India, and Japan affirmed the launch of the Super Intelligence Accelerator to fund and coordinate access, deployment, and technical assistance for trusted AI across the Indo-Pacific. A clarifying footnote noted that Australia, India, and Japan interpret \"Super Intelligence\" as artificial intelligence.",
+        "date": "2026-11-17",
+        "importance": "medium"
       },
       "result_preview": "{'saved': True, 'total_findings': 4}"
     },
     {
       "step": 24,
-      "tool": "save_finding",
-      "args": {
-        "financial_services": false,
-        "what_happened": "The European Commission's AI Office launched an open call for expression of interest inviting European AI providers with mature solutions to present them to the network of European Digital Innovation Hubs (EDIHs).",
-        "date": "2026-11-17",
-        "title": "EU AI Office Launches Call for Expression of Interest for European AI Providers",
-        "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers",
-        "jurisdiction": "European Union",
-        "why_it_matters": "Provides European AI developers with commercial pathways and matchmaking opportunities to scale adoption among small and medium-sized enterprises across the European Union.",
-        "importance": "low"
-      },
-      "result_preview": "{'saved': True, 'total_findings': 5}"
-    },
-    {
-      "step": 25,
-      "tool": "save_finding",
-      "args": {
-        "what_happened": "The Department of Commerce's Bureau of Industry and Security (BIS) issued an interim final rule (RIN 0694-AK50) titled 'Addressing Remote Access to Advanced Semiconductors.' The regulation establishes export license requirements to prevent entities headquartered in arms-embargoed jurisdictions (Country Group D:5, including China) or Macau from remotely accessing advanced AI computing power through global third-party data centers.",
-        "why_it_matters": "Directly impacts global cloud infrastructure providers, semiconductor exporters, and data centers by closing pathways for foreign restricted entities to train or fine-tune frontier AI models using overseas advanced compute.",
-        "financial_services": false,
-        "url": "https://public-inspection.federalregister.gov/2026-23529.pdf",
-        "date": "2026-11-16",
-        "importance": "high",
-        "jurisdiction": "United States",
-        "title": "US Commerce Department Issues Rule Restricting Remote Access to Advanced AI Semiconductors"
-      },
-      "result_preview": "{'saved': True, 'total_findings': 6}"
-    },
-    {
-      "step": 26,
-      "tool": "save_finding",
-      "args": {
-        "importance": "medium",
-        "what_happened": "Federal Reserve Governor Michael S. Barr delivered a keynote address evaluating findings from the Fed's November 2026 Financial Stability Report regarding potential financial stability risks from artificial intelligence. The analysis highlighted the rapid expansion of on-balance-sheet debt among top AI hyperscalers (expected to exceed $800 billion), over $3 trillion in opaque off-balance-sheet computing liabilities and leases, algorithmic collusion risks in wholesale trading, and systemic cybersecurity vulnerabilities.",
-        "why_it_matters": "Signals to supervised commercial banks, investment managers, and creditors that the Federal Reserve is closely scrutinizing counterparty risk, valuation premiums, and debt exposures associated with the global AI data center buildout.",
-        "jurisdiction": "United States",
-        "financial_services": true,
-        "title": "Federal Reserve Warns of AI Buildout Debt and Systemic Financial Stability Risks",
-        "url": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
-        "date": "2026-11-16"
-      },
-      "result_preview": "{'saved': True, 'total_findings': 7}"
-    },
-    {
-      "step": 27,
-      "tool": "save_finding",
-      "args": {
-        "what_happened": "The Office of the Comptroller of the Currency (OCC) published its Fall 2026 Semiannual Risk Perspective, highlighting emerging risks in the federal banking system. The report evaluated how banks of all sizes are increasingly adopting artificial intelligence and 'Super Intelligence' for operational efficiency and analytics, while warning of amplified cybersecurity, fraud, and credit risks as threat actors exploit advanced AI models.",
-        "date": "2026-11-12",
-        "title": "OCC Highlights Artificial Intelligence Opportunities and Operational Risks in Fall 2026 Report",
-        "importance": "medium",
-        "jurisdiction": "United States",
-        "url": "https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-99.html",
-        "why_it_matters": "Alerts federally regulated national banks and federal savings associations that bank examiners are prioritizing internal controls, fraud prevention, and operational resilience surrounding AI deployments.",
-        "financial_services": true
-      },
-      "result_preview": "{'saved': True, 'total_findings': 8}"
-    },
-    {
-      "step": 28,
-      "tool": "save_finding",
-      "args": {
-        "what_happened": "The New York City Council passed Introduction 891-A, landmark legislation sponsored by Speaker Julie Menin that bans 'surveillance pricing' across the city. The bill makes it unlawful for any entity or service provider to use algorithms and consumer personal data to charge different prices to different customers for the same goods or services.",
-        "date": "2026-11-12",
-        "importance": "high",
-        "title": "New York City Council Approves Landmark Ban on Algorithmic Surveillance Pricing",
-        "jurisdiction": "United States",
-        "why_it_matters": "Creates strict consumer protection compliance obligations for retailers, e-commerce platforms, delivery apps, and ride-sharing services operating in NYC by eliminating personalized algorithmic price differentiation and establishing a significant municipal model for automated pricing governance.",
-        "financial_services": true,
-        "url": "https://council.nyc.gov/press/2026/11/12/3339/"
-      },
-      "result_preview": "{'saved': True, 'total_findings': 9}"
-    },
-    {
-      "step": 29,
-      "tool": "save_finding",
-      "args": {
-        "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/",
-        "title": "Quad Leaders Affirm Support for Super Intelligence Accelerator to Expand Trusted AI",
-        "importance": "medium",
-        "why_it_matters": "Directs diplomatic and financial resources toward sovereign computing capacity and trusted AI deployment among allied nations, strengthening technological interoperability and critical infrastructure across the Indo-Pacific.",
-        "financial_services": false,
-        "jurisdiction": "United States",
-        "date": "2026-11-17",
-        "what_happened": "Following the Quad Leaders' Summit in Manila, President Donald J. Trump and the Prime Ministers of Australia, India, and Japan issued a joint declaration affirming their commitment to the Quad Super Intelligence (SI) Accelerator. The initiative coordinates and funds multilateral programs to facilitate trusted AI/SI access, regional deployment, and technical assistance across the Indo-Pacific."
-      },
-      "result_preview": "{'saved': True, 'total_findings': 10}"
-    },
-    {
-      "step": 30,
-      "tool": "save_finding",
-      "args": {
-        "importance": "medium",
-        "date": "2026-11-17",
-        "what_happened": "Saskatchewan Minister of Justice and Attorney General Tim McLeod introduced Bill No. 76, The Prevention of Deceptive Artificial Intelligence Act, in the provincial Legislative Assembly. The bill establishes civil remedies against malicious AI-generated deepfakes, grants courts the authority to mandate content takedowns and award damages, and updates provincial election and consumer protection rules to mandate AI disclosures.",
-        "title": "Saskatchewan Introduces The Prevention of Deceptive Artificial Intelligence Act (Bill 76)",
-        "jurisdiction": "Canada",
-        "financial_services": false,
-        "why_it_matters": "Establishes Canada's first comprehensive provincial legislative framework specifically targeting deceptive synthetic media, imposing civil liabilities on creators and distributors of malicious AI content and setting new transparency requirements.",
-        "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Orders/30L3S/20261117Orders-HTML.htm?v=20261117023902"
-      },
-      "result_preview": "{'saved': True, 'total_findings': 11}"
-    },
-    {
-      "step": 31,
       "tool": "finish",
       "args": {
-        "overview": "AI policy during the week of November 11\u201318, 2026 was highlighted by major regulatory and trade actions across jurisdictions. In the European Union, the European Commission advanced implementation of the EU AI Act by publishing formal guidelines on Article 50 transparency obligations and launching a public consultation on the Article 27 Fundamental Rights Impact Assessment template, while financial regulators on both sides of the Atlantic\u2014including the Federal Reserve, OCC, ECB, and Joint EU-UK Forum\u2014elevated scrutiny on systemic AI infrastructure debt, operational resilience, and cybersecurity risks. In the United States, the Department of Commerce issued an interim final rule restricting foreign remote access to advanced AI computing chips, New York City enacted a landmark ban on algorithmic surveillance pricing, and in Canada, Saskatchewan introduced provincial legislation to provide civil remedies against deceptive AI deepfakes."
+        "overview": "The European Commission launched public feedback and testing on its draft Fundamental Rights Impact Assessment template under Article 27 of the AI Act, creating key compliance guidance for high-risk deployers including financial institutions. The European Central Bank warned that AI infrastructure debt financing and advanced cyber threats represent top systemic risks to financial stability. In the United States, Quad leaders committed to the Super Intelligence Accelerator to fund and coordinate trusted AI deployment across the Indo-Pacific."
       },
       "result_preview": "{'finished': True}"
     }
