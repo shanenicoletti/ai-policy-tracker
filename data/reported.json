@@ -1,4 +1,12 @@
 {
+  "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting": {
+    "reported_on": "2026-11-23",
+    "title": "AI Act Advisory Forum Convenes Second Plenary and Elects Co-Chairs"
+  },
+  "https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-tenth-meeting": {
+    "reported_on": "2026-11-23",
+    "title": "European AI Board Adopts New Rules of Procedure and Reviews National Enforcement"
+  },
   "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers": {
     "reported_on": "2026-11-18",
     "title": "EU AI Office Launches Call for SME-Ready AI Solutions"
@@ -7,9 +15,41 @@
     "reported_on": "2026-11-18",
     "title": "European Commission Consults on AI Act Fundamental Rights Impact Assessment Template"
   },
+  "https://docs.legassembly.sk.ca/legdocs/bills/30l3s/bill30-76.pdf": {
+    "reported_on": "2026-11-23",
+    "title": "Saskatchewan Introduces Prevention of Deceptive Artificial Intelligence Act"
+  },
+  "https://www.canada.ca/en/canadian-heritage/news/2026/11/ministers-miller-and-solomon-announce-members-of-the-advisory-council-on-artificial-intelligence-and-culture.html": {
+    "reported_on": "2026-11-23",
+    "title": "Canada Establishes Advisory Council on Artificial Intelligence and Culture"
+  },
+  "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/advancing-ai/progress.html": {
+    "reported_on": "2026-11-23",
+    "title": "Treasury Board Reports on Consultations for Federal AI Register"
+  },
+  "https://www.congress.gov/bill/119th-congress/house-bill/11076": {
+    "reported_on": "2026-11-23",
+    "title": "House Bill Proposes CISA Lead Oversight of Federal AI Agents"
+  },
+  "https://www.congress.gov/bill/119th-congress/senate-bill/5785": {
+    "reported_on": "2026-11-23",
+    "title": "Senate Bill Introduced Mandating SEC Rules on Corporate AI Use"
+  },
   "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.ga.html": {
     "reported_on": "2026-11-18",
     "title": "ECB Highlights AI Debt Financing and Cyber Threats as Key Financial Stability Risks"
+  },
+  "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html": {
+    "reported_on": "2026-11-23",
+    "title": "ECB Warns of Financial Stability Risks from AI Valuations and Infrastructure Debt"
+  },
+  "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors": {
+    "reported_on": "2026-11-23",
+    "title": "Commerce Department Restricts Remote Foreign Access to Advanced Semiconductors"
+  },
+  "https://www.federalregister.gov/documents/2026/11/19/2026-23539/policies-on-the-use-of-generative-super-intelligence-in-agency-adjudication-request-for-comments": {
+    "reported_on": "2026-11-23",
+    "title": "ACUS Solicits Feedback on Generative AI in Agency Adjudication"
   },
   "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release": {
     "reported_on": "2026-11-18",
